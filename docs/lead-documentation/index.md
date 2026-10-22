@@ -21,6 +21,8 @@ features:
       height: 24
     title: Leads de Veículos
     details: Receba propostas e contatos de interessados em veículos com informações completas do anúncio e cliente.
+    link: /lead-documentation/api/veiculos
+    linkText: Ver mais
   
   - icon:
       light: /icones/imovel.svg
@@ -29,6 +31,8 @@ features:
       height: 24
     title: Leads de Imóveis
     details: Integre leads de imóveis com dados detalhados sobre o tipo, finalidade e referência do imóvel.
+    link: /lead-documentation/api/imoveis
+    linkText: Ver mais
   
   - icon:
       light: /icones/seguranca.svg
@@ -37,6 +41,8 @@ features:
       height: 24
     title: Autenticação Segura
     details: Sistema de autenticação Basic Auth com token e email do cliente para garantir a segurança dos dados.
+    link: /lead-documentation/api/autenticacao
+    linkText: Ver mais
   
   - icon:
       light: /icones/tempo-real.svg
@@ -45,6 +51,8 @@ features:
       height: 24
     title: Webhook em Tempo Real
     details: Receba os leads instantaneamente através de requisições POST HTTP em sua URL de webhook.
+    link: /lead-documentation/guide/fluxo
+    linkText: Ver mais
   
   - icon:
       light: /icones/dados.svg
@@ -53,6 +61,8 @@ features:
       height: 24
     title: Dados Estruturados
     details: JSON completo com informações do lead, anúncio e cliente de forma padronizada.
+    link: /lead-documentation/guide/introducao
+    linkText: Ver mais
   
   - icon:
       light: /icones/integracao.svg
@@ -61,6 +71,8 @@ features:
       height: 24
     title: Fácil Integração
     details: Exemplos práticos em PHP, Node.js, Python e C# para facilitar sua implementação.
+    link: /lead-documentation/guide/comecando
+    linkText: Ver mais
 ---
 
 ## Início Rápido

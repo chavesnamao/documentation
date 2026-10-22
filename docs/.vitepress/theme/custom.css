@@ -137,7 +137,10 @@
   border-color: var(--vp-c-divider);
   transition: border-color 0.2s, box-shadow 0.2s;
 }
-.VPFeature.VPLink:hover {
+/* Hover SO em cartao que e link. `.VPLink` vale para todo cartao, inclusive
+   os que nao levam a lugar nenhum, e reagir ao mouse ali promete um clique que
+   nao existe. `.link` so aparece quando o cartao tem destino. */
+.VPFeature.VPLink.link:hover {
   border-color: var(--vp-c-brand-1);
   box-shadow: 0 2px 10px rgba(27, 26, 26, 0.06);
 }

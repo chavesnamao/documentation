@@ -18,6 +18,8 @@ features:
       height: 24
     title: Integração Simples
     details: Integre seus imóveis através de arquivo XML de forma fácil e rápida
+    link: /xml-documentation/introducao/introducao
+    linkText: Ver mais
   - icon:
       light: /icones/documento.svg
       dark: /icones/escuro/documento.svg
@@ -25,6 +27,8 @@ features:
       height: 24
     title: Documentação Completa
     details: Todas as especificações e exemplos necessários para integração
+    link: /xml-documentation/arquivo/
+    linkText: Ver mais
 ---
 
 # Bem-vindo

@@ -133,14 +133,14 @@ Use a sigla do estado (UF) com 2 letras maiúsculas na tag `<estado>`:
 - Siga exatamente a sigla da tabela
 :::
 
-### ✅ Correto
+### Correto
 ```xml
 <estado>PR</estado>
 <estado>SP</estado>
 <estado>RJ</estado>
 ```
 
-### ❌ Incorreto
+### Incorreto
 ```xml
 <estado>pr</estado>          <!-- Minúsculo -->
 <estado>Pr</estado>          <!-- Misto -->
@@ -153,11 +153,11 @@ Use a sigla do estado (UF) com 2 letras maiúsculas na tag `<estado>`:
 
 Antes de enviar seu XML, verifique:
 
-1. ✅ Sigla tem exatamente 2 caracteres
-2. ✅ Ambos os caracteres são maiúsculos
-3. ✅ Sigla está na lista de estados brasileiros
-4. ✅ Cidade pertence ao estado informado
-5. ✅ CEP corresponde ao estado/cidade
+1. Sigla tem exatamente 2 caracteres
+2. Ambos os caracteres são maiúsculos
+3. Sigla está na lista de estados brasileiros
+4. Cidade pertence ao estado informado
+5. CEP corresponde ao estado/cidade
 
 ## Combinação com Cidade
 

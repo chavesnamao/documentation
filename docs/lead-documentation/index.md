@@ -14,27 +14,45 @@ hero:
       link: /lead-documentation/api/autenticacao
 
 features:
-  - icon: 🚗
+  - icon:
+      src: /icones/veiculo.svg
+      width: 24
+      height: 24
     title: Leads de Veículos
     details: Receba propostas e contatos de interessados em veículos com informações completas do anúncio e cliente.
   
-  - icon: 🏠
+  - icon:
+      src: /icones/imovel.svg
+      width: 24
+      height: 24
     title: Leads de Imóveis
     details: Integre leads de imóveis com dados detalhados sobre o tipo, finalidade e referência do imóvel.
   
-  - icon: 🔒
+  - icon:
+      src: /icones/seguranca.svg
+      width: 24
+      height: 24
     title: Autenticação Segura
     details: Sistema de autenticação Basic Auth com token e email do cliente para garantir a segurança dos dados.
   
-  - icon: ⚡
+  - icon:
+      src: /icones/tempo-real.svg
+      width: 24
+      height: 24
     title: Webhook em Tempo Real
     details: Receba os leads instantaneamente através de requisições POST HTTP em sua URL de webhook.
   
-  - icon: 📊
+  - icon:
+      src: /icones/dados.svg
+      width: 24
+      height: 24
     title: Dados Estruturados
     details: JSON completo com informações do lead, anúncio e cliente de forma padronizada.
   
-  - icon: 🛠️
+  - icon:
+      src: /icones/integracao.svg
+      width: 24
+      height: 24
     title: Fácil Integração
     details: Exemplos práticos em PHP, Node.js, Python e C# para facilitar sua implementação.
 ---
@@ -95,11 +113,11 @@ Os dados chegam em formato JSON com todas as informações necessárias:
 
 ## Próximos Passos
 
-::: tip 📖 Leia a Documentação
+::: tip Leia a Documentação
 Confira o [Guia de Introdução](/lead-documentation/guide/introducao) para entender melhor o funcionamento da integração.
 :::
 
-::: warning 🔐 Configure a Autenticação
+::: warning Configure a Autenticação
 Entenda como funciona a [Autenticação Basic Auth](/lead-documentation/api/autenticacao) da API.
 :::
 
@@ -107,5 +125,5 @@ Entenda como funciona a [Autenticação Basic Auth](/lead-documentation/api/aute
 
 Confira também nossas outras documentações de integração:
 
-- 🏠 **[Documentação XML de Imóveis](/xml-documentation/)** - Integre seu sistema via XML para anúncios de imóveis
-- 🚗 **[API de Veículos](/vehicle-api-documentation/)** - Integração completa via API REST para gestão de veículos
+- **[Documentação XML de Imóveis](/xml-documentation/)** - Integre seu sistema via XML para anúncios de imóveis
+- **[API de Veículos](/vehicle-api-documentation/)** - Integração completa via API REST para gestão de veículos

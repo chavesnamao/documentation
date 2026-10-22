@@ -98,14 +98,14 @@ Uma piscina pode estar em `<area_comum>` (piscina do condomínio) ou em `<area_p
 ## Problemas Comuns
 
 ::: warning Atenção
-- ❌ Não use abreviações (ex: "AC" ao invés de "Ar Condicionado")
-- ❌ Não confunda com áreas comuns do condomínio
-- ❌ Não liste características que não existem
+- Não use abreviações (ex: "AC" ao invés de "Ar Condicionado")
+- Não confunda com áreas comuns do condomínio
+- Não liste características que não existem
 :::
 
 ::: tip Boas Práticas
-- ✅ Use os nomes padronizados da lista
-- ✅ Liste apenas características realmente presentes no imóvel
-- ✅ Mantenha a ortografia correta
-- ✅ Agrupe por categoria para melhor organização
+- Use os nomes padronizados da lista
+- Liste apenas características realmente presentes no imóvel
+- Mantenha a ortografia correta
+- Agrupe por categoria para melhor organização
 :::

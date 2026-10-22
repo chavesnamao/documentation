@@ -31,27 +31,11 @@ export default defineConfig({
         href: "https://cdn.chavesnamao.com.br/common/logos/favicon.ico",
       },
     ],
-    [
-      "style",
-      {},
-      `
-      :root {
-        --vp-c-brand-1: #DC2626;
-        --vp-c-brand-2: #EF4444;
-        --vp-c-brand-3: #F87171;
-        --vp-c-brand-soft: rgba(220, 38, 38, 0.14);
-      }
-      .dark {
-        --vp-c-brand-1: #F87171;
-        --vp-c-brand-2: #EF4444;
-        --vp-c-brand-3: #DC2626;
-        --vp-c-brand-soft: rgba(248, 113, 113, 0.16);
-      }
-    `,
-    ],
   ],
   markdown: {
-    theme: "material-theme-palenight",
+    // Um tema por modo. Antes era so "material-theme-palenight", que e
+    // escuro: no modo claro o bloco de codigo ficava sem contraste.
+    theme: { light: "github-light", dark: "github-dark" },
     lineNumbers: true,
   },
   themeConfig: {

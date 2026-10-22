@@ -37,7 +37,7 @@ Valor abaixo do mercado! Agende sua visita.
 ### Exemplo sem CDATA (não recomendado)
 
 ```xml
-<!-- ❌ Isso pode causar erro no XML -->
+<!-- Isso pode causar erro no XML -->
 <descritivo>Apartamento com 2 quartos, 1 suíte & varanda gourmet.</descritivo>
 ```
 
@@ -104,16 +104,16 @@ Agende sua visita!
 ## Problemas Comuns
 
 ::: warning Atenção
-- ❌ Não usar `CDATA` e incluir caracteres especiais (`&`, `<`, `>`)
-- ❌ Ultrapassar o limite de 3000 caracteres
-- ❌ Enviar o descritivo totalmente vazio
-- ❌ Incluir código HTML complexo (tabelas, scripts, estilos)
+- Não usar `CDATA` e incluir caracteres especiais (`&`, `<`, `>`)
+- Ultrapassar o limite de 3000 caracteres
+- Enviar o descritivo totalmente vazio
+- Incluir código HTML complexo (tabelas, scripts, estilos)
 :::
 
 ::: tip Boas Práticas
-- ✅ Sempre utilize `CDATA` para envolver o descritivo
-- ✅ Use Enter ou `<br>` para organizar o texto em parágrafos
-- ✅ Descreva os diferenciais do imóvel de forma clara e objetiva
-- ✅ Mantenha o texto dentro do limite de 3000 caracteres
-- ✅ Evite textos em CAIXA ALTA ou com excesso de pontuação (!!!)
+- Sempre utilize `CDATA` para envolver o descritivo
+- Use Enter ou `<br>` para organizar o texto em parágrafos
+- Descreva os diferenciais do imóvel de forma clara e objetiva
+- Mantenha o texto dentro do limite de 3000 caracteres
+- Evite textos em CAIXA ALTA ou com excesso de pontuação (!!!)
 :::

@@ -82,14 +82,14 @@ ou
 ## Problemas Comuns
 
 ::: warning Atenção
-- ❌ Não use abreviações (ex: "Quad." ao invés de "Quadra de Esportes")
-- ❌ Não liste comodidades da área privativa aqui
-- ❌ Não liste áreas que não existem
+- Não use abreviações (ex: "Quad." ao invés de "Quadra de Esportes")
+- Não liste comodidades da área privativa aqui
+- Não liste áreas que não existem
 :::
 
 ::: tip Boas Práticas
-- ✅ Use os nomes padronizados da lista
-- ✅ Liste apenas áreas realmente disponíveis
-- ✅ Mantenha a ortografia correta
-- ✅ Agrupe por tipo para melhor organização
+- Use os nomes padronizados da lista
+- Liste apenas áreas realmente disponíveis
+- Mantenha a ortografia correta
+- Agrupe por tipo para melhor organização
 :::

@@ -2,7 +2,7 @@
 
 Entre em contato com nosso canal de Customer Success para ajudá-lo com a integração de leads.
 
-## 📞 Contato
+## Contato
 
 ### Customer Success
 
@@ -14,10 +14,10 @@ Entre em contato com nosso canal de Customer Success para ajudá-lo com a integr
 
 Para dúvidas técnicas, consulte também:
 
-- 📖 [Guia de Introdução](/lead-documentation/guide/introducao)
-- 🚀 [Começando](/lead-documentation/guide/comecando)
-- 🔄 [Fluxo de Integração](/lead-documentation/guide/fluxo)
-- 🔐 [Autenticação](/lead-documentation/api/autenticacao)
-- 🚗 [Webhook - Veículos](/lead-documentation/api/veiculos)
-- 🏠 [Webhook - Imóveis](/lead-documentation/api/imoveis)
-- ❓ [FAQ](/lead-documentation/recursos/faq)
+- [Guia de Introdução](/lead-documentation/guide/introducao)
+- [Começando](/lead-documentation/guide/comecando)
+- [Fluxo de Integração](/lead-documentation/guide/fluxo)
+- [Autenticação](/lead-documentation/api/autenticacao)
+- [Webhook - Veículos](/lead-documentation/api/veiculos)
+- [Webhook - Imóveis](/lead-documentation/api/imoveis)
+- [FAQ](/lead-documentation/recursos/faq)

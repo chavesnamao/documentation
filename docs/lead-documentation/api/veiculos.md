@@ -115,4 +115,4 @@ Alguns campos podem vir com valor `null`:
 
 Para integração completa de anúncios de veículos via API REST, consulte:
 
-📚 **[Documentação da API de Veículos](/vehicle-api-documentation/)** - Gerencie anúncios de veículos com endpoints completos (criar, editar, excluir, consultar)
+ **[Documentação da API de Veículos](/vehicle-api-documentation/)** - Gerencie anúncios de veículos com endpoints completos (criar, editar, excluir, consultar)

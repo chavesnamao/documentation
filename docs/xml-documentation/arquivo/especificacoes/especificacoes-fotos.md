@@ -111,17 +111,17 @@ ou
 ## Problemas Comuns
 
 ::: warning Atenção
-- ❌ URLs que retornam erro 404
-- ❌ URLs que exigem autenticação
-- ❌ URLs de serviços temporários de compartilhamento
-- ❌ URLs locais (localhost, IPs privados)
-- ❌ Fotos muito pesadas (carregamento lento)
+- URLs que retornam erro 404
+- URLs que exigem autenticação
+- URLs de serviços temporários de compartilhamento
+- URLs locais (localhost, IPs privados)
+- Fotos muito pesadas (carregamento lento)
 :::
 
 ::: tip Boas Práticas
-- ✅ Use CDN para hospedar as imagens
-- ✅ Otimize as imagens antes de disponibilizar
-- ✅ Use nomes descritivos nos arquivos
-- ✅ Mantenha backup das imagens
-- ✅ Teste todas as URLs antes de enviar
+- Use CDN para hospedar as imagens
+- Otimize as imagens antes de disponibilizar
+- Use nomes descritivos nos arquivos
+- Mantenha backup das imagens
+- Teste todas as URLs antes de enviar
 :::

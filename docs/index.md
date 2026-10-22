@@ -14,22 +14,34 @@ hero:
       link: /vehicle-api-documentation/
 
 features:
-  - icon: 🏠
+  - icon:
+      src: /icones/imovel.svg
+      width: 24
+      height: 24
     title: XML de imóveis
     details: Publique o estoque da imobiliária no portal por um arquivo XML hospedado em URL pública. Estrutura das tags, valores aceitos e exemplos.
     link: /xml-documentation/
     linkText: Abrir documentação
-  - icon: 🚗
+  - icon:
+      src: /icones/veiculo.svg
+      width: 24
+      height: 24
     title: API REST de veículos
     details: Crie, atualize e publique anúncios de carros e motos pelo seu próprio sistema. Autenticação, endpoints, objetos e fila de execução.
     link: /vehicle-api-documentation/
     linkText: Abrir documentação
-  - icon: 📨
+  - icon:
+      src: /icones/lead.svg
+      width: 24
+      height: 24
     title: Integração de leads
     details: Receba por webhook, em tempo real, os contatos gerados nos seus anúncios de veículos e imóveis.
     link: /lead-documentation/
     linkText: Abrir documentação
-  - icon: 🤝
+  - icon:
+      src: /icones/parceiro.svg
+      width: 24
+      height: 24
     title: API de parceiros
     details: Para sistemas parceiros que operam leads no CRM. Consulta de leads, tabela de planos e registro do resultado de ligação.
     link: /partner-api-documentation/

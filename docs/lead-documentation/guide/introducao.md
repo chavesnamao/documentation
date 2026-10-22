@@ -17,18 +17,18 @@ A API de Integração de Leads é um sistema de **webhooks** que envia automatic
 
 ## Características Principais
 
-### 🔄 Webhook em Tempo Real
+### Webhook em Tempo Real
 Os leads são enviados instantaneamente após serem gerados na plataforma.
 
-### 🔒 Autenticação Segura
+### Autenticação Segura
 Utiliza Basic Authentication com email e token codificados em Base64.
 
-### 📦 Dois Segmentos Suportados
+### Dois Segmentos Suportados
 
 - **VEHICLE**: Leads de veículos (carros, motos, etc.)
 - **REALTY**: Leads de imóveis (casas, apartamentos, terrenos, etc.)
 
-### 📊 Dados Completos
+### Dados Completos
 
 Cada lead contém:
 - Informações do contato (nome, email, telefone, mensagem)

@@ -1,0 +1,201 @@
+/**
+ * Tema da documentação, alinhado ao portal chavesnamao.com.br.
+ *
+ * Os valores abaixo não são escolha de gosto: foram lidos das variáveis CSS do
+ * próprio portal em 22/10/2026. Antes disso a documentação usava o vermelho
+ * #DC2626, que é o vermelho padrão do Tailwind e não o da marca, além de
+ * cinzas de texto e borda que também não eram os do portal.
+ *
+ * Sobre a fonte: a `cnmfont` do portal é a Inter variável renomeada (conferido
+ * no arquivo: família "Inter", eixo de peso 400 a 900). O VitePress já embute a
+ * Inter, então não há arquivo de fonte neste repositório: a documentação e o
+ * portal já desenham com a mesma letra. A declaração abaixo só torna isso
+ * explícito, e a versão do VitePress ainda cobre mais caracteres do que o
+ * recorte de 223 glifos que o portal serve.
+ */
+
+:root {
+  /* Tipografia do portal */
+  --vp-font-family-base: "Inter", "cnmfont", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+
+  /* Marca: #EB0027 é o vermelho do portal, não o #DC2626 que estava aqui */
+  --vp-c-brand-1: #eb0027;
+  --vp-c-brand-2: #af0521;
+  --vp-c-brand-3: #eb0027;
+  --vp-c-brand-soft: #fff0f2;
+
+  /* Texto: o portal não usa preto puro nem o cinza-azulado do VitePress */
+  --vp-c-text-1: #1b1a1a;
+  --vp-c-text-2: #5e5c5d;
+  --vp-c-text-3: #71717a;
+
+  /* Superfícies e bordas */
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #f6f5f5;
+  --vp-c-bg-soft: #f6f5f5;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-divider: #e5e5e7;
+  --vp-c-border: #e5e5e7;
+  --vp-c-gutter: #e5e5e7;
+
+  /* Botões */
+  --vp-button-brand-bg: #eb0027;
+  --vp-button-brand-border: #eb0027;
+  --vp-button-brand-hover-bg: #af0521;
+  --vp-button-brand-hover-border: #af0521;
+  --vp-button-brand-active-bg: #af0521;
+  --vp-button-alt-bg: #f3f3f5;
+  --vp-button-alt-border: #e5e5e7;
+  --vp-button-alt-text: #1b1a1a;
+  --vp-button-alt-hover-bg: #e9e9ec;
+  --vp-button-alt-hover-border: #d9d9dd;
+
+  /* Avisos, nas cores de estado do portal */
+  --vp-c-tip-1: #eb0027;
+  --vp-c-tip-soft: #fff0f2;
+  --vp-c-warning-1: #d08700;
+  --vp-c-warning-soft: rgba(208, 135, 0, 0.1);
+  --vp-c-danger-1: #ca3500;
+  --vp-c-danger-soft: rgba(202, 53, 0, 0.1);
+  --vp-c-note-1: #155dfc;
+  --vp-c-note-soft: rgba(21, 93, 252, 0.1);
+
+  /* Código. O bloco estava lavado porque o tema de sintaxe era escuro
+     (palenight) rodando no modo claro. */
+  --vp-code-block-bg: #fafafa;
+  --vp-code-block-divider-color: #e5e5e7;
+  --vp-code-line-number-color: #a1a1aa;
+  --vp-code-line-highlight-color: rgba(235, 0, 39, 0.06);
+}
+
+.dark {
+  --vp-c-brand-1: #ff5c74;
+  --vp-c-brand-2: #eb0027;
+  --vp-c-brand-3: #ff5c74;
+  --vp-c-brand-soft: rgba(235, 0, 39, 0.18);
+
+  --vp-c-tip-1: #ff5c74;
+  --vp-c-tip-soft: rgba(235, 0, 39, 0.16);
+
+  --vp-button-brand-bg: #eb0027;
+  --vp-button-brand-border: #eb0027;
+  --vp-button-brand-hover-bg: #ff2f4c;
+  --vp-button-brand-hover-border: #ff2f4c;
+
+  --vp-code-block-bg: #161618;
+  --vp-code-line-highlight-color: rgba(255, 92, 116, 0.12);
+}
+
+/* ── Ajustes de leitura no modo claro ──────────────────────────────────── */
+
+/* O título do hero em duas cores, como o portal faz no destaque. */
+.VPHero .name {
+  color: var(--vp-c-brand-1);
+}
+
+/* Cartões de recurso: a borda dá contorno no claro, onde só o cinza de fundo
+   deixava a página chapada.
+   Dois detalhes do VitePress obrigam a escrever assim: a regra dele é
+   `.VPFeature[data-v-hash]`, que pesa mais do que `.VPFeature` sozinho, e o
+   fundo cinza mora no `.box` de dentro, não no cartão. O hash muda a cada
+   build, então não dá para citá-lo: a saída é casar duas classes. */
+.VPFeature.VPLink {
+  border-color: var(--vp-c-divider);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.VPFeature.VPLink:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 2px 10px rgba(27, 26, 26, 0.06);
+}
+.VPFeature .box {
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+.dark .VPFeature .box {
+  background-color: var(--vp-c-bg-soft);
+}
+
+/* O ícone entra como <img> solto dentro do cartão, sem div em volta, então o
+   quadrinho colorido tem de ser desenhado no próprio <img>. */
+.VPFeature .box > .VPImage {
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  box-sizing: content-box;
+  background-color: var(--vp-c-brand-soft);
+  border-radius: 8px;
+}
+
+/* Tabela: a documentação é cheia de tabela grande de campos, e sem faixa
+   alternada a leitura se perde na linha. */
+.vp-doc table {
+  display: table;
+  width: 100%;
+}
+.vp-doc tr:nth-child(2n) {
+  background-color: #fbfbfc;
+}
+.dark .vp-doc tr:nth-child(2n) {
+  background-color: var(--vp-c-bg-soft);
+}
+.vp-doc th {
+  background-color: #f6f5f5;
+  color: var(--vp-c-text-1);
+  font-weight: 600;
+  text-transform: none;
+  font-size: 14px;
+}
+.dark .vp-doc th {
+  background-color: var(--vp-c-bg-alt);
+}
+.vp-doc td,
+.vp-doc th {
+  border-color: var(--vp-c-divider);
+}
+
+/* Código entre texto: cinza do portal, sem o rosa do tema padrão. */
+.vp-doc :not(pre) > code {
+  background-color: #f3f3f5;
+  color: #1b1a1a;
+  font-size: 0.875em;
+  border: 1px solid #e5e5e7;
+  border-radius: 4px;
+}
+.dark .vp-doc :not(pre) > code {
+  background-color: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  border-color: var(--vp-c-divider);
+}
+
+/* Bloco de código: moldura, que no claro some sem borda. */
+.vp-doc div[class*="language-"] {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+}
+
+/* Avisos com barra lateral, em vez de só fundo colorido. */
+.vp-doc .custom-block {
+  border-radius: 8px;
+  border-width: 1px 1px 1px 4px;
+}
+
+/* Títulos um pouco mais firmes, no peso que o portal usa. */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  letter-spacing: -0.01em;
+}
+.vp-doc h2 {
+  border-top-color: var(--vp-c-divider);
+}
+
+/* Na página de capa, o texto em markdown que vem depois dos cartões encosta
+   neles: o VitePress não separa os dois blocos. */
+.VPHome .vp-doc {
+  padding-top: 32px;
+}
+.VPHome .vp-doc > h1:first-child,
+.VPHome .vp-doc > h2:first-child {
+  margin-top: 0;
+}

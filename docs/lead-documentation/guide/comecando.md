@@ -6,10 +6,10 @@ Este guia irá ajudá-lo a configurar sua primeira integração com a API de Lea
 
 Antes de começar, certifique-se de ter:
 
-- ✅ Uma conta ativa na plataforma Chaves na Mão
-- ✅ Um servidor web capaz de receber requisições HTTP POST
-- ✅ URL pública acessível para receber os webhooks
-- ✅ Certificado SSL (HTTPS recomendado)
+- Uma conta ativa na plataforma Chaves na Mão
+- Um servidor web capaz de receber requisições HTTP POST
+- URL pública acessível para receber os webhooks
+- Certificado SSL (HTTPS recomendado)
 
 ## Passo 1: Obter Credenciais
 

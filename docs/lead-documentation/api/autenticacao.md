@@ -27,7 +27,7 @@ O token é **individual para cada cliente** e pode ser obtido seguindo os passos
 3. Role até o final da página
 4. Em **Dados Adicionais**, localize o campo **Token Integração de leads**
 
-> **📋 Importante**: Cada cliente possui um token único. Caso tenha dificuldades para localizar ou ativar a integração, entre em contato com nossa equipe de atendimento.
+> ** Importante**: Cada cliente possui um token único. Caso tenha dificuldades para localizar ou ativar a integração, entre em contato com nossa equipe de atendimento.
 
 ## Próximos Passos
 

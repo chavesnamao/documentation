@@ -125,4 +125,4 @@ Alguns campos podem vir com valor `null`:
 
 Para integração completa de anúncios de imóveis via XML, consulte:
 
-📚 **[Documentação XML de Imóveis](/xml-documentation/)** - Envie seus anúncios de imóveis através de arquivo XML com estrutura padronizada
+ **[Documentação XML de Imóveis](/xml-documentation/)** - Envie seus anúncios de imóveis através de arquivo XML com estrutura padronizada

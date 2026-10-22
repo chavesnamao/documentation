@@ -15,42 +15,48 @@ hero:
 
 features:
   - icon:
-      src: /icones/veiculo.svg
+      light: /icones/veiculo.svg
+      dark: /icones/escuro/veiculo.svg
       width: 24
       height: 24
     title: Leads de Veículos
     details: Receba propostas e contatos de interessados em veículos com informações completas do anúncio e cliente.
   
   - icon:
-      src: /icones/imovel.svg
+      light: /icones/imovel.svg
+      dark: /icones/escuro/imovel.svg
       width: 24
       height: 24
     title: Leads de Imóveis
     details: Integre leads de imóveis com dados detalhados sobre o tipo, finalidade e referência do imóvel.
   
   - icon:
-      src: /icones/seguranca.svg
+      light: /icones/seguranca.svg
+      dark: /icones/escuro/seguranca.svg
       width: 24
       height: 24
     title: Autenticação Segura
     details: Sistema de autenticação Basic Auth com token e email do cliente para garantir a segurança dos dados.
   
   - icon:
-      src: /icones/tempo-real.svg
+      light: /icones/tempo-real.svg
+      dark: /icones/escuro/tempo-real.svg
       width: 24
       height: 24
     title: Webhook em Tempo Real
     details: Receba os leads instantaneamente através de requisições POST HTTP em sua URL de webhook.
   
   - icon:
-      src: /icones/dados.svg
+      light: /icones/dados.svg
+      dark: /icones/escuro/dados.svg
       width: 24
       height: 24
     title: Dados Estruturados
     details: JSON completo com informações do lead, anúncio e cliente de forma padronizada.
   
   - icon:
-      src: /icones/integracao.svg
+      light: /icones/integracao.svg
+      dark: /icones/escuro/integracao.svg
       width: 24
       height: 24
     title: Fácil Integração

@@ -69,7 +69,16 @@
   --vp-code-line-highlight-color: rgba(235, 0, 39, 0.06);
 }
 
+/**
+ * O modo escuro precisa repetir TODO token de cor que o bloco `:root` acima
+ * fixou. O VitePress define esses mesmos tokens em `.dark`, mas as duas regras
+ * têm o mesmo peso e a nossa vem depois na folha: sem o par escuro aqui, o
+ * site troca de classe e continua branco.
+ */
 .dark {
+  /* Marca: o #EB0027 sozinho não tem contraste suficiente sobre fundo escuro,
+     então o texto e os links usam uma versão clareada e o botão mantém o
+     vermelho cheio, que ali está sobre branco. */
   --vp-c-brand-1: #ff5c74;
   --vp-c-brand-2: #eb0027;
   --vp-c-brand-3: #ff5c74;
@@ -77,13 +86,37 @@
 
   --vp-c-tip-1: #ff5c74;
   --vp-c-tip-soft: rgba(235, 0, 39, 0.16);
+  --vp-c-warning-soft: rgba(208, 135, 0, 0.16);
+  --vp-c-danger-soft: rgba(202, 53, 0, 0.16);
+  --vp-c-note-soft: rgba(21, 93, 252, 0.16);
+
+  /* Texto: o #1b1a1a do portal vira o fundo, e o texto inverte. */
+  --vp-c-text-1: #f6f5f5;
+  --vp-c-text-2: #b5b1b2;
+  --vp-c-text-3: #8a8686;
+
+  /* Superfícies, em degraus a partir da tinta do portal. */
+  --vp-c-bg: #1b1a1a;
+  --vp-c-bg-alt: #151414;
+  --vp-c-bg-soft: #242223;
+  --vp-c-bg-elv: #242223;
+  --vp-c-divider: #332f30;
+  --vp-c-border: #332f30;
+  --vp-c-gutter: #151414;
 
   --vp-button-brand-bg: #eb0027;
   --vp-button-brand-border: #eb0027;
   --vp-button-brand-hover-bg: #ff2f4c;
   --vp-button-brand-hover-border: #ff2f4c;
+  --vp-button-alt-bg: #2a2728;
+  --vp-button-alt-border: #3a3637;
+  --vp-button-alt-text: #f6f5f5;
+  --vp-button-alt-hover-bg: #343031;
+  --vp-button-alt-hover-border: #4a4546;
 
-  --vp-code-block-bg: #161618;
+  --vp-code-block-bg: #151414;
+  --vp-code-block-divider-color: #332f30;
+  --vp-code-line-number-color: #6b6768;
   --vp-code-line-highlight-color: rgba(255, 92, 116, 0.12);
 }
 
@@ -163,9 +196,9 @@
   border-radius: 4px;
 }
 .dark .vp-doc :not(pre) > code {
-  background-color: var(--vp-c-bg-soft);
-  color: var(--vp-c-text-1);
-  border-color: var(--vp-c-divider);
+  background-color: #242223;
+  color: #f6f5f5;
+  border-color: #332f30;
 }
 
 /* Bloco de código: moldura, que no claro some sem borda. */

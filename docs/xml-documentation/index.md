@@ -12,13 +12,15 @@ hero:
 
 features:
   - icon:
-      src: /icones/integracao.svg
+      light: /icones/integracao.svg
+      dark: /icones/escuro/integracao.svg
       width: 24
       height: 24
     title: Integração Simples
     details: Integre seus imóveis através de arquivo XML de forma fácil e rápida
   - icon:
-      src: /icones/documento.svg
+      light: /icones/documento.svg
+      dark: /icones/escuro/documento.svg
       width: 24
       height: 24
     title: Documentação Completa

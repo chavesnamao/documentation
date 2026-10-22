@@ -15,7 +15,8 @@ hero:
 
 features:
   - icon:
-      src: /icones/imovel.svg
+      light: /icones/imovel.svg
+      dark: /icones/escuro/imovel.svg
       width: 24
       height: 24
     title: XML de imóveis
@@ -23,7 +24,8 @@ features:
     link: /xml-documentation/
     linkText: Abrir documentação
   - icon:
-      src: /icones/veiculo.svg
+      light: /icones/veiculo.svg
+      dark: /icones/escuro/veiculo.svg
       width: 24
       height: 24
     title: API REST de veículos
@@ -31,7 +33,8 @@ features:
     link: /vehicle-api-documentation/
     linkText: Abrir documentação
   - icon:
-      src: /icones/lead.svg
+      light: /icones/lead.svg
+      dark: /icones/escuro/lead.svg
       width: 24
       height: 24
     title: Integração de leads
@@ -39,7 +42,8 @@ features:
     link: /lead-documentation/
     linkText: Abrir documentação
   - icon:
-      src: /icones/parceiro.svg
+      light: /icones/parceiro.svg
+      dark: /icones/escuro/parceiro.svg
       width: 24
       height: 24
     title: API de parceiros

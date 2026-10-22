@@ -38,6 +38,10 @@ jobs:
           cache: npm
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        with:
+          # Sem isto a action nao liga o Pages sozinha: ela so consulta,
+          # e falha com 'Not Found' enquanto ninguem tiver habilitado na tela.
+          enablement: true
       - name: Install dependencies
         run: npm install
       - name: Build with VitePress

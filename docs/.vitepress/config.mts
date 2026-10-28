@@ -118,6 +118,10 @@ export default defineConfig({
             text: "API de parceiros",
             items: [
               {
+                text: "v1.1.0",
+                link: "/partner-api-documentation/versoes/v1.1.0",
+              },
+              {
                 text: "v1.0.0",
                 link: "/partner-api-documentation/versoes/v1.0.0",
               },

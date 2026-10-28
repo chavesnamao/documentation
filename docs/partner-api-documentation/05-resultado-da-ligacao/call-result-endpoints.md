@@ -13,8 +13,10 @@ Responde `200`, não `201`.
 3. Guarda resumo, transcrição, gravação e campos coletados no próprio lead.
 4. Cria a anotação de rastro na linha do tempo.
 5. Cria a tarefa de acompanhamento, se o bloco `tarefa` vier.
+6. Nos resultados de cadastro errado, envia o contato para a pasta de reconferência, e com isso o
+   lead sai da sua fila em `GET /partners/leads`.
 
-Tudo em uma operação só: ou aplica inteiro, ou não aplica nada.
+Os cinco primeiros passos são uma operação só: ou aplica inteiro, ou não aplica nada.
 
 ## Requisição
 
@@ -51,7 +53,7 @@ gravado no card é o texto quebrado. Garanta `Content-Type: application/json` e 
 efetivamente codificado em UTF-8.
 :::
 
-## Os três resultados
+## Os cinco resultados
 
 ::: code-group
 
@@ -105,6 +107,36 @@ efetivamente codificado em UTF-8.
   "transcricao": "Sara: Olá, falo com...",
   "link_gravacao": "https://gravacoes.exemplo.com/conv_0003.mp3",
   "data_chamada": "2026-10-21T11:40:00-03:00"
+}
+```
+
+```json [Cadastro errado]
+{
+  "lead_id": "0a1b2c3d-4e5f-6071-8293-a4b5c6d7e8f9",
+  "id_chamada": "conv_0004",
+  "resultado": "lead_dados_invalidos",
+  "produto": "imoveis",
+  "autorizou_contato_especialista": false,
+  "motivo_desqualificacao": "Atendeu uma pizzaria. O número não é da imobiliária há dois anos.",
+  "resumo": "Número errado, não falei com a empresa.",
+  "transcricao": "Sara: Olá, falo com...",
+  "link_gravacao": "https://gravacoes.exemplo.com/conv_0004.mp3",
+  "data_chamada": "2026-10-21T14:05:00-03:00"
+}
+```
+
+```json [Fora de segmento]
+{
+  "lead_id": "0a1b2c3d-4e5f-6071-8293-a4b5c6d7e8f9",
+  "id_chamada": "conv_0005",
+  "resultado": "lead_fora_de_segmento",
+  "produto": "veiculos",
+  "autorizou_contato_especialista": false,
+  "motivo_desqualificacao": "É oficina mecânica, não vende veículos.",
+  "resumo": "Falei com o dono. Não trabalha com venda.",
+  "transcricao": "Sara: Olá, falo com...",
+  "link_gravacao": "https://gravacoes.exemplo.com/conv_0005.mp3",
+  "data_chamada": "2026-10-21T15:20:00-03:00"
 }
 ```
 

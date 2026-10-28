@@ -92,6 +92,20 @@ O limite por página é 100, e é também o padrão. Montar a campanha do dia co
 uma fração das chamadas de páginas pequenas, e o teto por minuto é por chave.
 :::
 
+## Quem não entra na fila
+
+Além dos filtros que você escolhe, o CRM já tira da lista:
+
+- lead sem telefone nenhum no cadastro, que não serve para discar;
+- lead de card fechado, ganho ou perdido;
+- **contato que você mesmo mandou para reconferência** com
+  `lead_dados_invalidos` ou `lead_fora_de_segmento`.
+
+O terceiro item é o que impede a repetição: como `lead_dados_invalidos` **não fecha o card**, sem
+essa exclusão o mesmo lead voltaria para a sua fila no dia seguinte, com o mesmo telefone errado.
+Se o nosso Back Office encontrar o número certo e tirar o contato da pasta, o lead volta a
+aparecer normalmente.
+
 ## Casos que respondem `200` e parecem erro
 
 ::: code-group

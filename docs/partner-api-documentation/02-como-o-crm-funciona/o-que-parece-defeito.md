@@ -39,10 +39,21 @@ há 1 dia.
 
 ## O CRM não marca lead como "já entregue"
 
-Se você pedir a mesma página amanhã, os mesmos leads voltam, menos os que mudaram de etapa.
+Se você pedir a mesma página amanhã, os mesmos leads voltam, menos os que mudaram de etapa e os
+que você mandou para reconferência.
 
 **O controle de repetição é seu.** Foi uma decisão deliberada: criar no CRM um estado que só o
 sistema de fora sabe manter em dia geraria fila fantasma do nosso lado.
+
+## `lead_dados_invalidos` responde `200` sem mudar nada no card
+
+O card continua na mesma etapa, com a mesma situação e o mesmo dono. **Isso é o esperado**:
+telefone errado é defeito de cadastro, não perda de negócio, e fechar o card descartaria uma
+empresa que talvez quisesse comprar.
+
+O efeito visível está no contato, não no card: ele vai para a pasta de reconferência e some da
+sua fila. Se o seu código conferir "a situação do card mudou" para considerar sucesso, vai
+concluir que falhou sempre. O sinal de sucesso é o `200`.
 
 ## Não existe data de criação do lead na resposta
 
@@ -64,6 +75,9 @@ Veja [Status de respostas](../01-consideracoes-iniciais/status-request.md).
 ## O que não fazer
 
 - Não considere falha quando o card de "fechar negócio" continuar em Qualificação: é o esperado.
+- Não use `lead_desqualificado` nem `lead_fora_de_segmento` quando o problema foi o telefone: isso
+  fecha o card de uma empresa com a qual ninguém conseguiu falar. O resultado desse caso é
+  `lead_dados_invalidos`.
 - Não envie resultado para lead já fechado; a resposta será `409`.
 - Não confie em campo vazio como sinal de problema: `tipo_lead`, `cidade` e `uf` são opcionais
   de verdade.

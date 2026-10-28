@@ -81,8 +81,16 @@ Erro dentro do nosso sistema. Tente de novo com recuo progressivo; se persistir,
 
 ## `503`
 
-Específico de `GET /partners/planos`: a origem do preço falhou e não existe leitura anterior
-guardada. O cabeçalho `Retry-After` diz em quantos segundos tentar de novo.
+Acontece em dois casos, os dois do nosso lado.
+
+Em `GET /partners/planos`: a origem do preço falhou e não existe leitura anterior guardada. O
+cabeçalho `Retry-After` diz em quantos segundos tentar de novo.
+
+Em `POST /partners/resultados-chamada`, com `lead_dados_invalidos` ou `lead_fora_de_segmento`: o
+destino de reconferência não está configurado neste ambiente do CRM. **Nada foi gravado.** A
+alternativa seria aceitar a chamada e deixar o lead voltar para a sua fila amanhã com o mesmo
+telefone errado, em silêncio, e isso seria pior do que recusar. Avise o time do CRM e repita a
+chamada depois.
 
 É deliberado que isso seja um erro em vez de uma lista vazia com `200`: dizer "não temos plano" a
 um anunciante no meio da ligação é pior do que avisar que a consulta falhou.
@@ -99,4 +107,4 @@ um anunciante no meio da ligação é pior do que avisar que a consulta falhou.
 | `409`  | Lead fechado, ou envio em curso  | Só no segundo caso, após `Retry-After`.|
 | `429`  | Teto de chamadas                 | Sim, após `Retry-After`.               |
 | `500`  | Falha nossa                      | Sim, com recuo progressivo.            |
-| `503`  | Tabela de planos indisponível    | Sim, após `Retry-After`.               |
+| `503`  | Configuração nossa indisponível  | Sim, após `Retry-After`.               |
